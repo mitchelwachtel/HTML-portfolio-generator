@@ -31,7 +31,7 @@ inquirer
   ])
   .then((data) => {
     const fileName = `${data.name}.html`;
-    const contents = `<!DOCTYPE html> <html> <head> <title>${data.name}</title> </head> <body style="text-align: center;"> <h1>${data.name}</h1> <div style="margin: 10px; padding: 10px;"> <p>Location: ${data.location}</p> <p>LinkedIn: ${data.linkedin}</p> <p>GitHub: ${data.github}</p> <p>Bio: ${data.bio}</p> </div> </body> </html> `;
+    const contents = `<!DOCTYPE html> \n<html> \n<head> \n<title>${data.name}</title> \n</head> \n<body style="text-align: center;"> \n<h1>${data.name}</h1> \n<div style="margin: 10px; padding: 10px;"> \n<p>Location: ${data.location}</p> \n<p>LinkedIn: ${data.linkedin}</p> \n<p>GitHub: ${data.github}</p> \n<p>Bio: ${data.bio}</p> \n</div> \n</body> \n</html> \n`;
 
     fs.writeFile(fileName, contents, (err) =>
       err ? console.error(err) : console.log("Success!")
