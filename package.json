@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mitchelwachtel/HTML-portfolio-generator/issues"
   },
-  "homepage": "https://github.com/mitchelwachtel/HTML-portfolio-generator#readme"
+  "homepage": "https://github.com/mitchelwachtel/HTML-portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
