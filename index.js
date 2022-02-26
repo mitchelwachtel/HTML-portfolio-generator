@@ -30,10 +30,11 @@ inquirer
     },
   ])
   .then((data) => {
-    const fileName = `${data.name}.html`;
+    const fileName = `./htmls/${data.name}.html`;
     const contents = `<!DOCTYPE html> \n<html> \n<head> \n<title>${data.name}</title> \n</head> \n<body style="text-align: center;"> \n<h1>${data.name}</h1> \n<div style="margin: 10px; padding: 10px;"> \n<p>Location: ${data.location}</p> \n<p>LinkedIn: ${data.linkedin}</p> \n<p>GitHub: ${data.github}</p> \n<p>Bio: ${data.bio}</p> \n</div> \n</body> \n</html> \n`;
 
     fs.writeFile(fileName, contents, (err) =>
       err ? console.error(err) : console.log("Success!")
     );
-  });
+
+  })
